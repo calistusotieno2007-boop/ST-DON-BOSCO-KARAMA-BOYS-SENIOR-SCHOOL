@@ -1,131 +1,798 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="St. Don Bosco Karama Boys' Senior School, Meru County, Kenya.">
-  <title>St. Don Bosco Karama Boys' Senior School | Official Website Draft</title>
-  <style>
-    :root{--green:#064b35;--deep:#032c20;--gold:#f4c84a;--cream:#f6f7f2;--ink:#1e2a24;--muted:#617067;--white:#fff}
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;scroll-padding-top:75px}
-    body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65}
-    a{color:inherit}
-    .top{background:var(--deep);color:#fff;padding:8px 5%;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:.88rem}
-    .top a{text-decoration:none}
-    .identity{padding:16px 5%;display:flex;align-items:center;gap:15px;background:#fff}
-    .identity img{width:72px;height:72px;object-fit:cover;object-position:center;border-radius:8px;border:2px solid #e5e8e1}
-    .identity h1{font-size:clamp(1rem,2.6vw,1.55rem);line-height:1.25;color:var(--green)}
-    .identity p{font-size:.9rem;color:var(--muted);margin-top:4px}
-    nav{position:sticky;top:0;z-index:10;background:var(--green);padding:0 4%;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;box-shadow:0 3px 12px #0002}
-    nav a{padding:13px 12px;text-decoration:none;color:#fff;font-size:.9rem;font-weight:bold}
-    nav a:hover,nav a:focus{background:var(--gold);color:var(--deep)}
-    .hero{min-height:470px;display:flex;align-items:center;padding:65px 8%;color:#fff;background:linear-gradient(100deg,#032c20ed,#032c20a8),url('images/school-signboard.jpg') center 45%/cover}
-    .hero-content{max-width:800px}
-    .tag{font-size:.82rem;text-transform:uppercase;letter-spacing:2px;font-weight:bold;color:var(--gold)}
-    .hero h2{font-size:clamp(2.2rem,5.5vw,4rem);line-height:1.1;margin:15px 0}
-    .hero p{font-size:1.08rem;max-width:660px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-    .button{display:inline-block;padding:12px 20px;border-radius:5px;text-decoration:none;font-weight:bold}
-    .primary{background:var(--gold);color:var(--deep)}
-    .secondary{border:1px solid #fff;color:#fff}
-    section{padding:65px 7%}
-    .heading{text-align:center;max-width:780px;margin:0 auto 32px}
-    .heading .tag{color:var(--green)}
-    .heading h2{font-size:clamp(1.7rem,3.5vw,2.5rem);color:var(--green);margin:5px 0 10px}
-    .heading p{color:var(--muted)}
-    .about{max-width:1120px;margin:auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px}
-    .about img{width:100%;height:350px;object-fit:cover;border-radius:12px;box-shadow:0 10px 28px #0002}
-    .about h3{font-size:1.55rem;color:var(--green);margin-bottom:12px}
-    .pending{background:#fff8dd;border-left:4px solid var(--gold);padding:14px;margin-top:18px;font-size:.94rem}
-    .pale{background:var(--cream)}
-    .cards{max-width:1120px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .card{background:#fff;border:1px solid #e4e9e3;border-radius:10px;padding:25px;box-shadow:0 5px 18px #1232}
-    .card .emoji{font-size:1.8rem}
-    .card h3{color:var(--green);margin:8px 0}
-    .leader{background:var(--deep);color:#fff}
-    .leader .heading h2,.leader .heading p{color:#fff}
-    .leader-box{max-width:800px;margin:auto;text-align:center}
-    .leader-box h3{color:var(--gold);font-size:1.5rem}
-    .gallery{max-width:1050px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:22px}
-    figure{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 6px 20px #0002}
-    figure img{display:block;width:100%;height:300px;object-fit:cover}
-    figcaption{padding:14px 16px;font-weight:bold;color:var(--green)}
-    .caption-note{text-align:center;color:var(--muted);font-size:.88rem;max-width:850px;margin:20px auto 0}
-    .contact{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .contact article{background:var(--cream);padding:22px;border-radius:9px;overflow-wrap:anywhere}
-    .contact h3{color:var(--green);margin-bottom:7px}
-    .contact a{text-decoration:none}
-    footer{background:var(--deep);color:#e9f0eb;text-align:center;padding:30px 6%;font-size:.9rem}
-    footer strong{color:var(--gold)}
-    .small{font-size:.8rem;opacity:.85;margin-top:8px}
-    @media(max-width:760px){.identity img{width:56px;height:56px}.top{justify-content:center;text-align:center}nav{justify-content:flex-start}nav a{padding:10px;font-size:.83rem}.hero{min-height:420px;padding:48px 6%}section{padding:48px 6%}.about,.gallery{grid-template-columns:1fr}.cards,.contact{grid-template-columns:1fr}.about img{height:270px}figure img{height:250px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+          content="Welcome to St. Don Bosco Karama Boys' Senior School, Meru County, Kenya.">
+
+    <meta name="theme-color" content="#064b35">
+
+    <title>St. Don Bosco Karama Boys' Senior School</title>
+
+    <style>
+        :root {
+            --green: #064b35;
+            --dark-green: #032c20;
+            --gold: #f4c84a;
+            --cream: #f6f7f2;
+            --ink: #1e2a24;
+            --muted: #617067;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 75px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--ink);
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .top {
+            background: var(--dark-green);
+            color: white;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+
+        .top a {
+            text-decoration: none;
+        }
+
+        .identity {
+            padding: 18px 5%;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            background: white;
+        }
+
+        .identity img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #e5e8e1;
+        }
+
+        .identity h1 {
+            font-size: clamp(17px, 2.6vw, 25px);
+            line-height: 1.3;
+            color: var(--green);
+        }
+
+        .identity p {
+            font-size: 14px;
+            color: var(--muted);
+            margin-top: 5px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: var(--green);
+            padding: 0 4%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-shadow: 0 3px 12px #0002;
+        }
+
+        nav a {
+            padding: 13px 12px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background: var(--gold);
+            color: var(--dark-green);
+        }
+
+        .hero {
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            padding: 65px 8%;
+            color: white;
+
+            background-color: var(--dark-green);
+
+            background-image:
+                linear-gradient(
+                    100deg,
+                    rgba(3, 44, 32, 0.93),
+                    rgba(3, 44, 32, 0.55)
+                ),
+                url("images/school-signboard.jpg");
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .tag {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: var(--gold);
+        }
+
+        .hero h2 {
+            font-size: clamp(35px, 5.5vw, 64px);
+            line-height: 1.15;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            font-size: 17px;
+            max-width: 660px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .primary {
+            background: var(--gold);
+            color: var(--dark-green);
+        }
+
+        .secondary {
+            border: 1px solid white;
+            color: white;
+        }
+
+        section {
+            padding: 65px 7%;
+        }
+
+        .heading {
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto 35px;
+        }
+
+        .heading .tag {
+            color: var(--green);
+        }
+
+        .heading h2 {
+            font-size: clamp(27px, 3.5vw, 40px);
+            color: var(--green);
+            margin: 5px 0 10px;
+        }
+
+        .heading p {
+            color: var(--muted);
+        }
+
+        .about {
+            max-width: 1120px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .about img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 12px;
+            box-shadow: 0 10px 28px #0002;
+        }
+
+        .about h3 {
+            font-size: 25px;
+            color: var(--green);
+            margin: 10px 0 12px;
+        }
+
+        .pending {
+            background: #fff8dd;
+            border-left: 4px solid var(--gold);
+            padding: 14px;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        .pale {
+            background: var(--cream);
+        }
+
+        .cards {
+            max-width: 1120px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e4e9e3;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 18px #1232;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card .emoji {
+            font-size: 32px;
+        }
+
+        .card h3 {
+            color: var(--green);
+            margin: 8px 0;
+        }
+
+        .leader {
+            background: var(--dark-green);
+            color: white;
+        }
+
+        .leader .heading h2,
+        .leader .heading p {
+            color: white;
+        }
+
+        .leader-box {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .leader-box h3 {
+            color: var(--gold);
+            font-size: 26px;
+        }
+
+        /* SCHOOL IMAGE GALLERY */
+
+        .gallery {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .gallery figure {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px #0002;
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .gallery figure:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px #0003;
+        }
+
+        .gallery img {
+            display: block;
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            object-position: center;
+            background: #e8ece8;
+        }
+
+        .gallery figcaption {
+            padding: 18px;
+            font-size: 17px;
+            font-weight: bold;
+            color: var(--green);
+        }
+
+        .caption-note {
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+            max-width: 850px;
+            margin: 20px auto 0;
+        }
+
+        .contact {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .contact article {
+            background: var(--cream);
+            padding: 22px;
+            border-radius: 9px;
+            overflow-wrap: anywhere;
+        }
+
+        .contact h3 {
+            color: var(--green);
+            margin-bottom: 7px;
+        }
+
+        .contact a {
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--dark-green);
+            color: #e9f0eb;
+            text-align: center;
+            padding: 30px 6%;
+            font-size: 14px;
+        }
+
+        footer strong {
+            color: var(--gold);
+        }
+
+        .small {
+            font-size: 12px;
+            opacity: 0.85;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 760px) {
+            .identity img {
+                width: 58px;
+                height: 58px;
+            }
+
+            .top {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: flex-start;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 13px;
+            }
+
+            .hero {
+                min-height: 420px;
+                padding: 48px 6%;
+            }
+
+            section {
+                padding: 48px 6%;
+            }
+
+            .about,
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .cards,
+            .contact {
+                grid-template-columns: 1fr;
+            }
+
+            .about img {
+                height: 280px;
+            }
+
+            .gallery img {
+                height: 260px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="top">
-    <span>Meru County, Kenya</span>
-    <span><a href="tel:+254725889870">0725 889 870</a> &nbsp;|&nbsp; <a href="mailto:Karamasec@gmail.com">Karamasec@gmail.com</a></span>
-  </div>
-  <header class="identity">
-    <img src="images/school-signboard.jpg" alt="School signboard and emblem">
-    <div><h1>ST. DON BOSCO KARAMA BOYS' SENIOR SCHOOL</h1><p>School community â€¢ Learning â€¢ Character â€¢ Service</p></div>
-  </header>
-  <nav aria-label="Main navigation">
-    <a href="#home">Home</a><a href="#about">About</a><a href="#academics">Academics</a><a href="#leadership">Leadership</a><a href="#gallery">Gallery</a><a href="#admissions">Admissions</a><a href="#contact">Contact</a>
-  </nav>
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="tag">Welcome to our school</p>
-        <h2>Learning today.<br>Leading tomorrow.</h2>
-        <p>Welcome to St. Don Bosco Karama Boys' Senior School in Meru County, Kenya. This website is a starting point for sharing school information with students, parents, alumni and visitors.</p>
-        <div class="actions"><a class="button primary" href="#about">Discover Our School</a><a class="button secondary" href="#contact">Contact the School</a></div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="about">
-        <img src="images/school-signboard.jpg" alt="School signboard and emblem supplied for the website">
-        <div><p class="tag">About our school</p><h3>A place to learn, grow and contribute</h3>
-          <p>This website is being developed to help the school share verified information about its identity, learning programmes, achievements and community.</p>
-          <div class="pending"><strong>To confirm:</strong> The official school history, motto, vision and mission will be added when provided or approved by the school administration.</div>
+
+    <!-- CONTACT STRIP -->
+
+    <div class="top">
+        <span>Meru County, Kenya</span>
+
+        <span>
+            <a href="tel:+254725889870">0725 889 870</a>
+            &nbsp;|&nbsp;
+            <a href="mailto:Karamasec@gmail.com">
+                Karamasec@gmail.com
+            </a>
+        </span>
+    </div>
+
+    <!-- SCHOOL IDENTITY -->
+
+    <header class="identity">
+        <img
+            src="images/school-signboard.jpg"
+            alt="St. Don Bosco Karama school signboard"
+        >
+
+        <div>
+            <h1>ST. DON BOSCO KARAMA BOYS' SENIOR SCHOOL</h1>
+            <p>School Community | Learning | Character | Service</p>
         </div>
-      </div>
-    </section>
-    <section class="pale" id="academics">
-      <div class="heading"><p class="tag">Learning</p><h2>Academics & Student Development</h2><p>Official subjects, senior-school pathways and programme details will be published here after confirmation by the school.</p></div>
-      <div class="cards">
-        <article class="card"><div class="emoji">ðŸ“š</div><h3>Academic Programmes</h3><p>Information about the school's current subjects and approved learning pathways.</p></article>
-        <article class="card"><div class="emoji">ðŸ†</div><h3>Clubs, Sports & Activities</h3><p>A place to share verified information about student activities and co-curricular life.</p></article>
-        <article class="card"><div class="emoji">ðŸŒ±</div><h3>Character & Values</h3><p>The school's official values and approach to student development can be added here.</p></article>
-      </div>
-    </section>
-    <section class="leader" id="leadership">
-      <div class="heading"><p class="tag">School leadership</p><h2>Meet the Principal</h2><p>School leadership</p></div>
-      <div class="leader-box"><h3>Wilfred Linturi Kimathi</h3><p><strong>Principal</strong></p><p style="margin-top:12px">An approved welcome message from the principal can be added here when available.</p></div>
-    </section>
-    <section id="gallery">
-      <div class="heading"><p class="tag">Our school</p><h2>Gallery</h2><p>Images supplied for this first website draft.</p></div>
-      <div class="gallery">
-        <figure><img src="images/school-signboard.jpg" alt="Karama school signboard and emblem"><figcaption>School signboard and emblem</figcaption></figure>
-        <figure><img src="images/school-trophies.jpg" alt="Trophies and awards"><figcaption>Trophies and awards</figcaption></figure>
-      </div>
-      <p class="caption-note">Before public launch, confirm that the signboard represents the named school and that the photographs are approved for publication.</p>
-    </section>
-    <section class="pale" id="admissions">
-      <div class="heading"><p class="tag">Join our community</p><h2>Admissions</h2><p>For admission requirements and application procedures, please contact the school administration. Official, current admissions information will be added after confirmation.</p><div class="actions" style="justify-content:center"><a class="button primary" href="#contact">Make an Enquiry</a></div></div>
-    </section>
-    <section id="contact">
-      <div class="heading"><p class="tag">Get in touch</p><h2>Contact the School</h2><p>These contact details came from a third-party directory and must be confirmed by the school before public launch.</p></div>
-      <div class="contact">
-        <article><h3>Telephone</h3><p><a href="tel:+254725889870">0725 889 870</a></p></article>
-        <article><h3>Email</h3><p><a href="mailto:Karamasec@gmail.com">Karamasec@gmail.com</a></p></article>
-        <article><h3>Postal address</h3><p>P.O. Box 1923, Meru 60200, Kenya</p></article>
-      </div>
-    </section>
-  </main>
-  <footer><p><strong>ST. DON BOSCO KARAMA BOYS' SENIOR SCHOOL</strong></p><p>Meru County, Kenya</p><p>&copy; <span id="year"></span> School website draft</p><p class="small">Draft for review. Verify the school's official name, contacts, photos and content before publishing.</p></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </header>
+
+    <!-- NAVIGATION -->
+
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- HOMEPAGE BANNER -->
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+
+                <p class="tag">Welcome to our school</p>
+
+                <h2>
+                    Learning today.<br>
+                    Leading tomorrow.
+                </h2>
+
+                <p>
+                    Welcome to St. Don Bosco Karama Boys' Senior School
+                    in Meru County, Kenya. This website is a starting
+                    point for sharing school information with students,
+                    parents, alumni and visitors.
+                </p>
+
+                <div class="actions">
+                    <a class="button primary" href="#about">
+                        Discover Our School
+                    </a>
+
+                    <a class="button secondary" href="#contact">
+                        Contact the School
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT THE SCHOOL -->
+
+        <section id="about">
+            <div class="about">
+
+                <img
+                    src="images/school-signboard.jpg"
+                    alt="School signboard and emblem"
+                    loading="lazy"
+                >
+
+                <div>
+                    <p class="tag">About our school</p>
+
+                    <h3>A place to learn, grow and contribute</h3>
+
+                    <p>
+                        This website is being developed to help the
+                        school share verified information about its
+                        identity, learning programmes, achievements
+                        and community.
+                    </p>
+
+                    <div class="pending">
+                        <strong>To confirm:</strong>
+                        The official school history, motto, vision
+                        and mission should be added after confirmation
+                        by the school administration.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ACADEMICS -->
+
+        <section class="pale" id="academics">
+
+            <div class="heading">
+                <p class="tag">Learning</p>
+
+                <h2>Academics &amp; Student Development</h2>
+
+                <p>
+                    Official subjects, senior-school pathways and
+                    programme details will be published here after
+                    confirmation by the school.
+                </p>
+            </div>
+
+            <div class="cards">
+
+                <article class="card">
+                    <div class="emoji" aria-hidden="true">📚</div>
+
+                    <h3>Academic Programmes</h3>
+
+                    <p>
+                        Information about the school's current subjects
+                        and approved learning pathways.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="emoji" aria-hidden="true">🏆</div>
+
+                    <h3>Clubs, Sports &amp; Activities</h3>
+
+                    <p>
+                        A place to share verified information about
+                        student activities and co-curricular life.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="emoji" aria-hidden="true">🌱</div>
+
+                    <h3>Character &amp; Values</h3>
+
+                    <p>
+                        The school's official values and approach to
+                        student development can be added here.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SCHOOL LEADERSHIP -->
+
+        <section class="leader" id="leadership">
+
+            <div class="heading">
+                <p class="tag">School leadership</p>
+
+                <h2>Meet the Principal</h2>
+
+                <p>School leadership and community service.</p>
+            </div>
+
+            <div class="leader-box">
+
+                <h3>Wilfred Linturi Kimathi</h3>
+
+                <p><strong>Principal</strong></p>
+
+                <p style="margin-top: 12px;">
+                    An approved welcome message from the principal
+                    can be added here when available.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- SCHOOL IMAGE GALLERY -->
+
+        <section id="gallery">
+
+            <div class="heading">
+                <p class="tag">Our school</p>
+
+                <h2>School Gallery</h2>
+
+                <p>
+                    Explore photographs highlighting our school
+                    environment and achievements.
+                </p>
+            </div>
+
+            <div class="gallery">
+
+                <figure>
+                    <img
+                        src="images/school-signboard.jpg"
+                        alt="St. Don Bosco Karama school signboard"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Our School Signboard
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="images/school-trophies.jpg"
+                        alt="Trophies and awards displayed by the school"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Our Trophies and Achievements
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <p class="caption-note">
+                Photographs and captions should be reviewed and
+                approved by the school before the website is
+                officially launched.
+            </p>
+
+        </section>
+
+        <!-- ADMISSIONS -->
+
+        <section class="pale" id="admissions">
+
+            <div class="heading">
+
+                <p class="tag">Join our community</p>
+
+                <h2>Admissions</h2>
+
+                <p>
+                    For admission requirements and application
+                    procedures, please contact the school
+                    administration. Official, current admissions
+                    information will be added after confirmation.
+                </p>
+
+                <div class="actions" style="justify-content: center;">
+                    <a class="button primary" href="#contact">
+                        Make an Enquiry
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <div class="heading">
+
+                <p class="tag">Get in touch</p>
+
+                <h2>Contact the School</h2>
+
+                <p>
+                    Please confirm these contact details with the
+                    school administration before the public launch.
+                </p>
+
+            </div>
+
+            <div class="contact">
+
+                <article>
+                    <h3>Telephone</h3>
+
+                    <p>
+                        <a href="tel:+254725889870">
+                            0725 889 870
+                        </a>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Email</h3>
+
+                    <p>
+                        <a href="mailto:Karamasec@gmail.com">
+                            Karamasec@gmail.com
+                        </a>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Postal Address</h3>
+
+                    <p>
+                        P.O. Box 1923, Meru 60200, Kenya
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            <strong>
+                ST. DON BOSCO KARAMA BOYS' SENIOR SCHOOL
+            </strong>
+        </p>
+
+        <p>Meru County, Kenya</p>
+
+        <p>
+            &copy; <span id="year"></span>
+            School website draft
+        </p>
+
+        <p class="small">
+            Draft for review. Verify the school's official name,
+            contact information, photographs and content before
+            publishing.
+        </p>
+
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
 </body>
 </html>
-
